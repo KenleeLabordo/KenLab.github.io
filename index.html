@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="1612.css">
+    <!-- DM sans Font -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- External JavaScript -->
+    <script src="PORTFOLIO ASSESSMENT\Scripz.js"></script>
+</head>
+<body>
+    <div id="img1">
+        <div class="container">
+            <!-- Navigation Bar -->
+            <nav>
+                <a href="index.html">
+                    <img src="Imagez/Logo.png" class="logo"> <!--Logo -->
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <!-- Link to the About Me section -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#img2">Background</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Header Text -->
+            <div class="header-text">
+                <p>Undergraduate | Artist</p> <!-- Added a space for clarity -->
+                <h1><b>Hey! I'm Kenlee</b></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about"> <!-- Add id attribute for the About Me section -->
+        <div class="container">
+            <div class="row"> 
+                <div class="about-col-1">
+                    <img src="Imagez/Myface2.jpg" width="368px" height="538" class="rounded-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="gibberish"> An aspiring College undergraduate currently studying in Metaverse age training institute under Bath Spa University, Ras Al Khaimah. 
+                        I possess strong leadership qualities, and effective problem-solving skills that contribute to every team I am stationed with. Having experience with administrative roles, 
+                        I place myself dynamic and collaborative positions that ensures my growth in every aspect.  </p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick=" opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick=" opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick=" opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Public Speaking</span><br>Public speaking Winner | 2018</li>
+                                <li><span>Coding </span><br>Python | Html |CSS | JS </li>
+                                <li><span>Music Production</span><br> © Kenlee Labordo | spotify</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                
+                                <li><span>Music Production</span><br>Oh You! | Spotify</li>
+                                <li><span>Marketing</span><br>!VY | instagram<br>Oh You! | instagram</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>BathSpa University</span><br>2022-2026</li>
+                                <li><span>Feu-Roosevelt</span><br>2020-2022</li>
+                                <li><span>The Philippine School Dubai</span><br>2010-2020</li>
+                            </ul>
+                         </div>       
+                                
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BACKGROUND SECTION -->
+    <div id="img2">
+        <div id="container">
+            <h1 class="heading2">Background</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                    <h2 class="heading3">Music Production</h2>
+                    <p class="gibberish">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi in libero dignissim vestibulum. Fusce euismod augue sed lorem posuere.</p>
+                    <a href="https://open.spotify.com/artist/4SNtC7Xt3nn6EAMrwGWtDc">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <h2 class="heading3">Photography</h2>
+                    <p class="gibberish">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi in libero dignissim vestibulum. Fusce euismod augue sed lorem posuere.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2 class="heading3">Coding</h2>
+                    <p class="gibberish">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi in libero dignissim vestibulum. Fusce euismod augue sed lorem posuere, ut finibus libero tincidunt. Cras euismod eleifend lectus id hendrerit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO SECTION -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Imagez/yapper2.png">
+                    <div class="layer">
+                        <H3>Oh You! </H3>
+                        <p class="gibberish"> The 4 song EP released in the winter of '23</p>
+                        <a href="https://open.spotify.com/album/4BalOWiSQqfQxvCa1KKoWQ?si=bcxdyI7SQxq3juwnqa2QEQ"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="Imagez/Work 2.png">
+                    <div class="layer">
+                        <H3>!VY </H3>
+                        <p class="gibberish">The Award Winning Band Destined for greatness. See Their Story Here!</p>
+                        <a href="https://www.instagram.com/ivy_band_official/"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Imagez/Work 3.png">
+                    <div class="layer">
+                        <H3>For the Love of Cars </H3>
+                        <p class="gibberish">Kenlee Explores Retro Car heaven in search of a phantom Carshow.</p>
+                        <a href="https://www.instagram.com/p/C2Pf8aCyzNt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> Kenleelabordo2405@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0562045516</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_kenluy/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/artist/4SNtC7Xt3nn6EAMrwGWtDc?si=VZNK2UVASe-ZqD_UxDVszw"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="soundcloud.com/user-681418110"><i class="fa-brands fa-soundcloud"></i></a>
+                   
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © Copyright Kenlee Labordo</p>
+    </div>
+    </div>
+
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links"); 
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+    }
+    
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+    }
+   
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+    <script>   
+    /* Link to google sheet https://docs.google.com/spreadsheets/d/1LP_BYd3esVarcaY7tYVdbcTuotzN-GmhIQOWUGYpVnk/edit#gid=0 */
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXn-XCGi2ym62SazcdmdFEXFJvbq-qlek9u-nzsekJ3dTZVrOc9BKB1yF03RrEJnRW/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>

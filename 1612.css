@@ -1,0 +1,470 @@
+
+/*---------HEADER----------*/
+
+/* Setting the background color of the body */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Setting smooth scroll behavior for HTML elements */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resetting styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the background container */
+#img1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Imagez/KenLab\ 1.png"); /* Adjust the path to your background image */
+    background-size: cover;
+}
+
+/* Styling for the main container */
+.container {
+    padding: 10px 10%; /* Adjust padding as needed */
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling for navigation list items */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; /* Adjust margin for spacing between navigation items */
+}
+
+/* Styling for navigation links */
+nav ul li a {
+    color: white; /* Default link color */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: rgb(208, 206, 206); /* Change link color on hover */
+}
+
+/* Styling for the logo */
+.logo {
+    width: 250px; /* Adjust width of the logo */
+}
+
+/* Styling for the header text */
+.header-text {
+    color: aliceblue; /* Default text color */
+    text-align: right; /* Align the header text to the right */
+    margin-top: 20%; /* Adjust margin from the top */
+    font-size: 30px;
+}
+
+/* Styling for the header text h1 element */
+.header-text h1 {
+    color: aliceblue; /* Default text color */
+    margin-top: 20px; /* Adjust margin from the top */
+    font-size: 60px; /* Adjust font size of the h1 element */
+}
+
+/*---------ABOUT----------*/
+
+/* Styling for the about section */
+#about {
+    padding: 80px 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Styling for rounded images */
+.rounded-image {
+    border-radius: 6%; /* This will create a circular shape */
+    /* You can adjust the percentage to control the curvature */
+}
+
+/* Styling for flex container */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling for about columns */
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    text-align: justify;
+}
+
+.about-col-3 {
+    flex-basis: 60%;
+}
+
+/* Styling for the subtitle */
+.subtitle {
+    color: white;
+    font-size: 60px;
+    font-weight: 3100;
+}
+
+/* Styling for gibberish text */
+.gibberish {
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    transition: 0.5s;
+}
+
+.tab-links {
+    color: #fff;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #606AD1;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    color: white;
+    list-style: none;
+    margin: 10px;
+}
+
+.tab-contents ul li span {
+    color: #717ad3;
+    font-size: 14px;
+    transition: smooth 0.5s;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*---------BACKGROUND----------*/
+
+/* Styling for the background container */
+#img2 {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 150px;
+}
+
+/* Styling for the services list */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* Styling for service items */
+.services-list div {
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 6%;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/* Styling for service links */
+.services-list div a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Hover effect for service items */
+.services-list div:hover {
+    background-color: #606AD1;
+    transform: translateY(-10px);
+}
+
+/* Styling for headings */
+.heading2 {
+    color: aliceblue; /* Default text color */
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+.heading3 {
+    color: aliceblue; /* Default text color */
+    font-size: 30px;
+}
+
+.services-list div i {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+/*---------PORTFOLIO----------*/
+
+#portfolio {
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    max-width: 800px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.layer {
+    color: white;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), #606AD1);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+
+
+    margin-top: 20px;
+    color: #606AD1;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.Mywork {
+    color: white;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/*---------Contact----------*/
+
+#contact {
+    background: linear-gradient(rgb(0, 0, 0.9), #3B3E45);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    color: #fff;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.contact-left p i {
+    color: #606AD1;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #606AD1;
+    transform: translateY(-5px);
+}
+
+.btn2 {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #606AD1;
+    padding: 14px 50px;
+    border-radius: 6px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright {
+    color: #fff;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*--------dynamics-----*/
+
+/* Hide font awesome icons by default */
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    /* Adjust background image for smaller screens */
+    #img1 {
+        background-image: url("Imagez/Kenlab\ 2.png");
+        width: auto;
+    }
+    /* Adjust padding for smaller screens */
+    #img2 {
+        padding: 50px;
+    }
+
+    /* Adjust padding for contact section on smaller screens */
+    #contact {
+        padding: 50px;
+    }
+
+    /* Set full width for contact sections on smaller screens */
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    /* Adjust margin and font size for header text on smaller screens */
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    /* Adjust font size of h1 element in header text on smaller screens */
+    .header-text h1 {
+        font-size: 30px;
+    }
+    /* Display font awesome icons for navigation on smaller screens */
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+    /* Slide-in animation for navigation menu on smaller screens */
+    nav ul {
+        background: #606AD1;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+
+

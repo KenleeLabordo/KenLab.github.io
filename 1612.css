@@ -240,7 +240,7 @@ nav ul li a:hover {
 
 #portfolio {
     padding-top: 80px;
-    padding-bottom: 150px;
+    padding-bottom: 40px;
 }
 
 .work-list {
@@ -313,6 +313,81 @@ nav ul li a:hover {
 }
 
 .work:hover .layer {
+    height: 100%;
+}
+
+/*---------PORTFOLIO ROW 2---------*/
+#portfolio2 {
+    padding-bottom: 150px;
+}
+
+.work-list2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    
+}
+
+.work2 {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work2 img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    max-width: 800px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.layer {
+    color: white;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), #606AD1);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+
+
+    margin-top: 20px;
+    color: #606AD1;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.work2:hover img {
+    transform: scale(1.1);
+}
+
+.work2:hover .layer {
     height: 100%;
 }
 
